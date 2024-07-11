@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: lightpink;
+        }
+        button{
+            background-color: rgb(13, 214, 232);
+        }
+        table{
+            background-color: rgb(181, 171, 156);
+            margin: center;
+            margin-top: 5px;
+        }
+        h2{
+            margin-top: 150px;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viweport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h2>CALCULATOR</h2>
+    <input type= "text" id="result" readonly> 
+    <td><button onclick="clearresult('c')">C</button></td>
+    <table>
+        <tr>
+            <td><button onclick="append(7)">7</button></td>
+            <td><button onclick="append(8)">8</button></td>
+            <td><button onclick="append(9)">9</button></td>
+            <td><button onclick="operate('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="append(4)">4</button></td>
+            <td><button onclick="append(5)">5</button></td>
+            <td><button onclick="append(6)">6</button></td>
+            <td><button onclick="operate('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="append(1)">1</button></td>
+            <td><button onclick="append(2)">2</button></td>
+            <td><button onclick="append(3)">3</button></td>
+            <td><button onclick="operate('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="append(0)">0</button></td>
+            <td><button onclick="append('.')">.</button></td>
+            <td><button onclick="result('=')">=</button></td>
+            <td><button onclick="operate('/')">/</button></td>
+        </tr>
+    </table>
+    </center>
+    <script src="calc.js"></script>
+</body>
+</html>
